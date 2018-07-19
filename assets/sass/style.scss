@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+}
+
+header{
+	padding-top: 15px;
+	margin-bottom: 10px;
+
+	.salon-header{
+
+		img{
+			width: 50%;
+		    display: block;
+		    margin: auto;
+		}
+		.form-search input[type=text] {
+		  	padding: 2px;
+		  	font-size: 15px;
+		  	border: none;
+		  	border-bottom: 1px solid black;
+		}
+		.form-search button {
+		  	float: right;
+		  	padding: 2px 10px;
+		  	margin-right: 16px;
+		  	background: rgba(255, 255, 255, 0);
+		  	font-size: 15px;
+		  	border: none;
+		  	border-bottom: 1px solid black;
+		  	cursor: pointer;
+		}
+		.form-search {
+			input:focus, button:focus{
+				outline: none;
+			}
+			input{
+				width: 150px;
+			}
+		}
+		ul{
+			list-style-type: none;
+			display: inline;
+			padding-left: 5px;
+			margin-top: 3px;
+
+			li{
+				float: left;
+
+				a{
+					display: block;
+				    padding: 0px 12px;
+				    text-decoration: none;
+				    color: #333;
+				}
+				a:hover{
+				    color: red;
+				}
+			}
+		}
+	}
+}
+
+.salon-nav .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      	float: none;
+      	display: inline-block;
+    }
+    li a{
+    	color: #000;
+    	padding: 10px 30px;
+    }
+}
+.salon-main .breadcrumb{
+	background-color: #fff;
+}

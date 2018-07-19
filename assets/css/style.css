@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
+
+header {
+  padding-top: 15px;
+  margin-bottom: 10px; }
+  header .salon-header img {
+    width: 50%;
+    display: block;
+    margin: auto; }
+  header .salon-header .form-search input[type=text] {
+    padding: 2px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black; }
+  header .salon-header .form-search button {
+    float: right;
+    padding: 2px 10px;
+    margin-right: 16px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer; }
+  header .salon-header .form-search input:focus, header .salon-header .form-search button:focus {
+    outline: none; }
+  header .salon-header .form-search input {
+    width: 150px; }
+  header .salon-header ul {
+    list-style-type: none;
+    display: inline;
+    padding-left: 5px;
+    margin-top: 3px; }
+    header .salon-header ul li {
+      float: left; }
+      header .salon-header ul li a {
+        display: block;
+        padding: 0px 12px;
+        text-decoration: none;
+        color: #333; }
+      header .salon-header ul li a:hover {
+        color: red; }
+
+.salon-nav .navbar-nav {
+  width: 100%;
+  text-align: center; }
+  .salon-nav .navbar-nav > li {
+    float: none;
+    display: inline-block; }
+  .salon-nav .navbar-nav li a {
+    color: #000;
+    padding: 10px 30px; }
+
+.salon-main .breadcrumb {
+  background-color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
