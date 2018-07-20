@@ -56,5 +56,17 @@ header {
 
 .salon-main .breadcrumb {
   background-color: #fff; }
+.salon-main .salon-info-detail .info-item {
+  padding-left: 50px; }
+  .salon-main .salon-info-detail .info-item .rating i {
+    color: #d5d5d5; }
+  .salon-main .salon-info-detail .info-item .rating .star-full {
+    color: #ffae00; }
+  .salon-main .salon-info-detail .info-item .item-color button {
+    padding: 12px; }
+  .salon-main .salon-info-detail .info-item .item-color button:focus {
+    outline: none; }
+  .salon-main .salon-info-detail .info-item .item-color .color-active {
+    border: 2px solid #0ae8d6; }
 
 /*# sourceMappingURL=style.css.map */
