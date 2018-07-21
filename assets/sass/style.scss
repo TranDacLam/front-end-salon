@@ -5,6 +5,9 @@
 img{
 	width: 100%;
 }
+.clear{
+    clear: both;
+}
 
 header{
 	padding-top: 15px;
@@ -85,6 +88,10 @@ header{
 		.info-item{
 			padding-left: 50px;
 
+            > h3{
+                font-weight: 600;
+                margin-top: 0;
+            }
 			.rating {
 				i{
 					color: #d5d5d5;
@@ -94,16 +101,423 @@ header{
 				}
 			}
 			.item-color{
+				border: 2px solid #ddd;
+    			padding: 10px 20px 20px 20px;
+    			margin-top: 20px;
+
 				button{
-					padding: 12px;
+					padding: 15px;
+					margin-right: 5px;
+					margin-top: 10px;
+                    border-radius: 10px;
 				}
 				button:focus{
 					outline: none;
 				}
 				.color-active{
-					border: 2px solid #0ae8d6;
+					border: 3px solid #0a1be8;
 				}
 			}
+            .product-price{
+                margin-top: 15px;
+                margin-bottom: 5px;
+                .price-sell{
+                    float: left;
+                    span{
+                        color: #b2008d;
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+                }
+                .price-old{
+                    float: left;
+                    margin-top: 13px;
+                    span{
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                }
+                
+            }
+			
 		}
+		form.form-buy{
+			> button{
+				width: 100%;
+				margin-top: 30px;
+				padding: 10px;
+				text-transform: uppercase;
+				background-color: #ff5400;
+				color: #fff;
+				font-weight: bold;
+			}
+			> button:hover{
+				background-color: #333333;
+			}
+		}
+        .form-call-phone{
+            p{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 12px;
+                margin-top: 30px;
+            }
+            button{
+                background-color: #ff5400;
+                color: #fff;
+            }
+            button:hover{
+                background-color: #333333;
+            }
+            .input-group{
+                display: flex;
+            }
+        }
 	}
+    .salon-service{
+        margin-top: 40px;
+        div{
+            img{
+                float: left;
+            }
+            .service-content{
+                float: left;
+                padding-left: 20px;
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+        > div{
+            padding-right: 0px;
+            height: 100px;
+        }
+        .service-1{
+            border-right: 2px solid #ddd;
+            img{
+                width: 30%;
+                margin-top: 15px;
+            }
+        }
+        .service-2{
+            border-right: 2px solid #ddd;
+            img{
+                width: 24%;
+            }
+        }
+        .service-3{
+            border-right: 2px solid #ddd;
+            img{
+                width: 30%;
+                margin-top: 5px;
+            }
+        }
+        .service-4{
+            img{
+                width: 24%;
+            }
+        }
+    }
+    .salon-des{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 40px;
+        h3{
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .des-product{
+            p{
+                width: 60%;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
+    }
+    .salon-statistic{
+        margin-top: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 30px;
+        .row{
+            width: 70%;
+            margin: auto;
+        }
+        h3{
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        label{
+            width: 150px;
+            font-weight: 400;
+        }
+        h4{
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .statistic-1{
+            border-right: 1px solid #ddd;
+        }
+        .statistic-2{
+            padding-left: 50px;
+        }
+    }
+    .salon-slide-bottom{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        h3{
+            font-weight: 600;
+        }
+        .des-bottom{
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .salon-guide-bottom{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        h3{
+            font-weight: 600;
+        }
+        .guide-info{
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+            ul{
+                list-style-type: circle;
+                li{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .salon-check-guarantee-bottom{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        h3{
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h4{
+            font-weight: 600;
+        }
+        ul{
+            list-style-type: circle;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+        .col-guarantee{
+            border-left: 1px solid #ddd;
+            padding-left: 30px;
+        }
+    }
+    .salon-customer-bottom{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        h3{
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .customer-gallery{
+            .customer-desc{
+                margin-top: 15px;
+                .customer-name{
+                    float: left;
+                }
+                .customer-price{
+                    float: right;
+                }
+            }
+        }
+        .row > div:hover{
+            -webkit-box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.3);
+        }
+        .row > div{
+            padding-bottom: 20px;
+        }
+        .customer-desc{
+            a{
+                cursor: pointer;
+            }
+            span{
+                color: #b2008d;
+            }
+        }
+        
+    }
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+ 
+}
+ 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ 
+}
+ 
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+ 
+}
+ 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+ 
+}
+ 
+ 
+/*==========  Non-Mobile First Method  ==========*/
+ 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    header .salon-header .form-search input {
+        width: 100px;
+    }
+ 
+}
+ 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .salon-customer-bottom .row > div{
+        margin-bottom: 20px;
+    }
+    .salon-slide-bottom .des-bottom{
+        text-align: center;
+    }
+}
+ 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    header .salon-header .form-search button{
+        margin-right: 10px;
+    }
+    .salon-info-detail .row > .slide-show,
+    .salon-info-detail .row > .info-item{
+        width: 100%;
+    }
+    .salon-info-detail .row > .info-item{
+        margin-top: 30px;
+    }
+    .salon-main .salon-service div img{
+        margin: auto;
+        display: block;
+        float: none;
+    }
+    .salon-main .salon-service div .service-content{
+        float: none;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .salon-main .salon-statistic .row{
+        width: 100%;
+    }
+    .salon-main .salon-guide-bottom .guide-info{
+        width: 80%;
+    }
+}
+@media only screen and (max-width : 767px) {
+    .salon-main .salon-info-detail .form-call-phone .input-group {
+        display: inline-table;
+    }
+    .salon-main .salon-des{
+        margin-top: 30px;
+    }
+    .salon-main .salon-statistic label{
+        width: 100px;
+    }
+    .salon-service .row{
+        display: block;
+    }
+    .salon-main .salon-guide-bottom .guide-info{
+        width: 100%;
+    }
+    .salon-main .salon-check-guarantee-bottom .col-guarantee{
+        padding-left: 10px;
+    }
+    .salon-check-guarantee-bottom .row{
+        display: flex;
+    }
+    .salon-nav{
+        background-color: #eee;
+        border-color: #eee;
+        margin-top: 20px;
+    }
+    .salon-nav .navbar-toggle:focus, .salon-nav .navbar-toggle:hover{
+        background-color: #333;
+    }
+    .salon-nav .navbar-toggle .icon-bar{
+        background-color: #fff;
+    }
+    .salon-nav .navbar-toggle{
+        background-color: black;
+    }
+    .salon-nav .navbar-nav li a{
+        padding: 10px 20px;
+    }
+    .salon-service{
+        overflow: auto;
+    }
+    .salon-main .salon-info-detail .info-item{
+        padding-left: 15px;
+    }
+    .salon-info-detail .row > .slide-show{
+        padding-left: 0;
+    }
+}
+
+@media only screen 
+and (min-device-width : 480px) 
+and (max-device-width : 767px) {
+    .salon-nav .navbar-collapse{
+        display: block;
+    }
+    .salon-nav .navbar-header{
+        display: none;
+    }
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .salon-main .salon-des .des-product p{
+        width: 90%;
+    }
+    .salon-main .salon-statistic .statistic-1,
+    .salon-main .salon-statistic .statistic-2{
+        width: 100%;
+    }
+    .salon-main .salon-statistic .statistic-2{
+        padding-left: 15px;
+    }
+    .salon-main .salon-slide-bottom .des-bottom{
+        width: 80%;
+    }
+    .salon-check-guarantee-bottom .row{
+        display: block;
+    }
+    .salon-check-guarantee-bottom .col-check,
+    .salon-check-guarantee-bottom .col-guarantee
+    {
+        min-width: 100%;
+    }
+    .salon-customer-bottom .row > div{
+        width: 100%;
+    }
+}
+ 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
 }

@@ -4,6 +4,9 @@
 img {
   width: 100%; }
 
+.clear {
+  clear: both; }
+
 header {
   padding-top: 15px;
   margin-bottom: 10px; }
@@ -58,15 +61,305 @@ header {
   background-color: #fff; }
 .salon-main .salon-info-detail .info-item {
   padding-left: 50px; }
+  .salon-main .salon-info-detail .info-item > h3 {
+    font-weight: 600;
+    margin-top: 0; }
   .salon-main .salon-info-detail .info-item .rating i {
     color: #d5d5d5; }
   .salon-main .salon-info-detail .info-item .rating .star-full {
     color: #ffae00; }
-  .salon-main .salon-info-detail .info-item .item-color button {
-    padding: 12px; }
-  .salon-main .salon-info-detail .info-item .item-color button:focus {
-    outline: none; }
-  .salon-main .salon-info-detail .info-item .item-color .color-active {
-    border: 2px solid #0ae8d6; }
+  .salon-main .salon-info-detail .info-item .item-color {
+    border: 2px solid #ddd;
+    padding: 10px 20px 20px 20px;
+    margin-top: 20px; }
+    .salon-main .salon-info-detail .info-item .item-color button {
+      padding: 15px;
+      margin-right: 5px;
+      margin-top: 10px;
+      border-radius: 10px; }
+    .salon-main .salon-info-detail .info-item .item-color button:focus {
+      outline: none; }
+    .salon-main .salon-info-detail .info-item .item-color .color-active {
+      border: 3px solid #0a1be8; }
+  .salon-main .salon-info-detail .info-item .product-price {
+    margin-top: 15px;
+    margin-bottom: 5px; }
+    .salon-main .salon-info-detail .info-item .product-price .price-sell {
+      float: left; }
+      .salon-main .salon-info-detail .info-item .product-price .price-sell span {
+        color: #b2008d;
+        font-size: 30px;
+        margin-right: 10px; }
+    .salon-main .salon-info-detail .info-item .product-price .price-old {
+      float: left;
+      margin-top: 13px; }
+      .salon-main .salon-info-detail .info-item .product-price .price-old span {
+        color: #999;
+        text-decoration: line-through; }
+.salon-main .salon-info-detail form.form-buy > button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: #ff5400;
+  color: #fff;
+  font-weight: bold; }
+.salon-main .salon-info-detail form.form-buy > button:hover {
+  background-color: #333333; }
+.salon-main .salon-info-detail .form-call-phone p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 30px; }
+.salon-main .salon-info-detail .form-call-phone button {
+  background-color: #ff5400;
+  color: #fff; }
+.salon-main .salon-info-detail .form-call-phone button:hover {
+  background-color: #333333; }
+.salon-main .salon-info-detail .form-call-phone .input-group {
+  display: flex; }
+.salon-main .salon-service {
+  margin-top: 40px; }
+  .salon-main .salon-service div img {
+    float: left; }
+  .salon-main .salon-service div .service-content {
+    float: left;
+    padding-left: 20px; }
+    .salon-main .salon-service div .service-content p {
+      font-size: 13px; }
+  .salon-main .salon-service > div {
+    padding-right: 0px;
+    height: 100px; }
+  .salon-main .salon-service .service-1 {
+    border-right: 2px solid #ddd; }
+    .salon-main .salon-service .service-1 img {
+      width: 30%;
+      margin-top: 15px; }
+  .salon-main .salon-service .service-2 {
+    border-right: 2px solid #ddd; }
+    .salon-main .salon-service .service-2 img {
+      width: 24%; }
+  .salon-main .salon-service .service-3 {
+    border-right: 2px solid #ddd; }
+    .salon-main .salon-service .service-3 img {
+      width: 30%;
+      margin-top: 5px; }
+  .salon-main .salon-service .service-4 img {
+    width: 24%; }
+.salon-main .salon-des {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px; }
+  .salon-main .salon-des h3 {
+    margin-bottom: 30px;
+    font-weight: 600; }
+  .salon-main .salon-des .des-product p {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center; }
+.salon-main .salon-statistic {
+  margin-top: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px; }
+  .salon-main .salon-statistic .row {
+    width: 70%;
+    margin: auto; }
+  .salon-main .salon-statistic h3 {
+    margin-bottom: 25px;
+    font-weight: 600; }
+  .salon-main .salon-statistic label {
+    width: 150px;
+    font-weight: 400; }
+  .salon-main .salon-statistic h4 {
+    margin-bottom: 20px;
+    font-weight: 600; }
+  .salon-main .salon-statistic .statistic-1 {
+    border-right: 1px solid #ddd; }
+  .salon-main .salon-statistic .statistic-2 {
+    padding-left: 50px; }
+.salon-main .salon-slide-bottom {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd; }
+  .salon-main .salon-slide-bottom h3 {
+    font-weight: 600; }
+  .salon-main .salon-slide-bottom .des-bottom {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px; }
+.salon-main .salon-guide-bottom {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd; }
+  .salon-main .salon-guide-bottom h3 {
+    font-weight: 600; }
+  .salon-main .salon-guide-bottom .guide-info {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px; }
+    .salon-main .salon-guide-bottom .guide-info ul {
+      list-style-type: circle; }
+      .salon-main .salon-guide-bottom .guide-info ul li {
+        margin-bottom: 5px; }
+.salon-main .salon-check-guarantee-bottom {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd; }
+  .salon-main .salon-check-guarantee-bottom h3 {
+    margin-bottom: 30px;
+    font-weight: 600; }
+  .salon-main .salon-check-guarantee-bottom h4 {
+    font-weight: 600; }
+  .salon-main .salon-check-guarantee-bottom ul {
+    list-style-type: circle; }
+    .salon-main .salon-check-guarantee-bottom ul li {
+      margin-bottom: 5px; }
+  .salon-main .salon-check-guarantee-bottom .col-guarantee {
+    border-left: 1px solid #ddd;
+    padding-left: 30px; }
+.salon-main .salon-customer-bottom {
+  margin-top: 30px;
+  padding-bottom: 30px; }
+  .salon-main .salon-customer-bottom h3 {
+    margin-bottom: 30px;
+    font-weight: 600; }
+  .salon-main .salon-customer-bottom .customer-gallery .customer-desc {
+    margin-top: 15px; }
+    .salon-main .salon-customer-bottom .customer-gallery .customer-desc .customer-name {
+      float: left; }
+    .salon-main .salon-customer-bottom .customer-gallery .customer-desc .customer-price {
+      float: right; }
+  .salon-main .salon-customer-bottom .row > div:hover {
+    -webkit-box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.3); }
+  .salon-main .salon-customer-bottom .row > div {
+    padding-bottom: 20px; }
+  .salon-main .salon-customer-bottom .customer-desc a {
+    cursor: pointer; }
+  .salon-main .salon-customer-bottom .customer-desc span {
+    color: #b2008d; }
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  header .salon-header .form-search input {
+    width: 100px; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .salon-customer-bottom .row > div {
+    margin-bottom: 20px; }
+
+  .salon-slide-bottom .des-bottom {
+    text-align: center; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header .salon-header .form-search button {
+    margin-right: 10px; }
+
+  .salon-info-detail .row > .slide-show,
+  .salon-info-detail .row > .info-item {
+    width: 100%; }
+
+  .salon-info-detail .row > .info-item {
+    margin-top: 30px; }
+
+  .salon-main .salon-service div img {
+    margin: auto;
+    display: block;
+    float: none; }
+
+  .salon-main .salon-service div .service-content {
+    float: none;
+    text-align: center;
+    padding-left: 0px; }
+
+  .salon-main .salon-statistic .row {
+    width: 100%; }
+
+  .salon-main .salon-guide-bottom .guide-info {
+    width: 80%; } }
+@media only screen and (max-width: 767px) {
+  .salon-main .salon-info-detail .form-call-phone .input-group {
+    display: inline-table; }
+
+  .salon-main .salon-des {
+    margin-top: 30px; }
+
+  .salon-main .salon-statistic label {
+    width: 100px; }
+
+  .salon-service .row {
+    display: block; }
+
+  .salon-main .salon-guide-bottom .guide-info {
+    width: 100%; }
+
+  .salon-main .salon-check-guarantee-bottom .col-guarantee {
+    padding-left: 10px; }
+
+  .salon-check-guarantee-bottom .row {
+    display: flex; }
+
+  .salon-nav {
+    background-color: #eee;
+    border-color: #eee;
+    margin-top: 20px; }
+
+  .salon-nav .navbar-toggle:focus, .salon-nav .navbar-toggle:hover {
+    background-color: #333; }
+
+  .salon-nav .navbar-toggle .icon-bar {
+    background-color: #fff; }
+
+  .salon-nav .navbar-toggle {
+    background-color: black; }
+
+  .salon-nav .navbar-nav li a {
+    padding: 10px 20px; }
+
+  .salon-service {
+    overflow: auto; }
+
+  .salon-main .salon-info-detail .info-item {
+    padding-left: 15px; }
+
+  .salon-info-detail .row > .slide-show {
+    padding-left: 0; } }
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .salon-nav .navbar-collapse {
+    display: block; }
+
+  .salon-nav .navbar-header {
+    display: none; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .salon-main .salon-des .des-product p {
+    width: 90%; }
+
+  .salon-main .salon-statistic .statistic-1,
+  .salon-main .salon-statistic .statistic-2 {
+    width: 100%; }
+
+  .salon-main .salon-statistic .statistic-2 {
+    padding-left: 15px; }
+
+  .salon-main .salon-slide-bottom .des-bottom {
+    width: 80%; }
+
+  .salon-check-guarantee-bottom .row {
+    display: block; }
+
+  .salon-check-guarantee-bottom .col-check,
+  .salon-check-guarantee-bottom .col-guarantee {
+    min-width: 100%; }
+
+  .salon-customer-bottom .row > div {
+    width: 100%; } }
+/* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */

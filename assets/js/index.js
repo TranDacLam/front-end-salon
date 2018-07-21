@@ -67,10 +67,54 @@ var jssor_1_slider_init = function() {
    /*#endregion responsive code end*/
 };
 
+jssor_2_slider_init = function() {
+
+      var jssor_1_options = {
+        $AutoPlay: 1,
+        $SlideWidth: 720,
+        $ArrowNavigatorOptions: {
+          $Class: $JssorArrowNavigator$
+        },
+        $BulletNavigatorOptions: {
+          $Class: $JssorBulletNavigator$
+        }
+      };
+
+      var jssor_1_slider = new $JssorSlider$("slider_container_bottom", jssor_1_options);
+
+      /*#region responsive code begin*/
+
+      var MAX_WIDTH = 980;
+
+      function ScaleSlider() {
+          var containerElement = jssor_1_slider.$Elmt.parentNode;
+          var containerWidth = containerElement.clientWidth;
+
+          if (containerWidth) {
+
+              var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+              jssor_1_slider.$ScaleWidth(expectedWidth);
+          }
+          else {
+              window.setTimeout(ScaleSlider, 30);
+          }
+      }
+
+      ScaleSlider();
+
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+      /*#endregion responsive code end*/
+  };
+
 $(document).ready(function() {
    jssor_1_slider_init();
+   jssor_2_slider_init();
 
-   $('.salon-info-detail .item-color button').on('click', function(){
+   $('.salon-info-detail .item-color button').on('click', function(e){
+      e.preventDefault();
       $('.salon-info-detail .item-color button').removeClass('color-active');
       $(this).addClass('color-active');
    });
