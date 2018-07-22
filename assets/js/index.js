@@ -69,22 +69,49 @@ var jssor_1_slider_init = function() {
 
 jssor_2_slider_init = function() {
 
+   var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-0.7}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
       var jssor_1_options = {
         $AutoPlay: 1,
         $SlideWidth: 720,
         $ArrowNavigatorOptions: {
           $Class: $JssorArrowNavigator$
         },
+        $CaptionSliderOptions: {
+          $Class: $JssorCaptionSlideo$,
+          $Transitions: jssor_1_SlideoTransitions
+        },
         $BulletNavigatorOptions: {
           $Class: $JssorBulletNavigator$
         }
       };
 
+      if (navigator.userAgent.match(/iPhone|iPod|iPad|Android|Windows Phone|BlackBerry/i)) {
+        jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $SlideEasing: $Jease$.$InOutSine,
+              $DragOrientation: 3,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+    }
+
       var jssor_1_slider = new $JssorSlider$("slider_container_bottom", jssor_1_options);
 
       /*#region responsive code begin*/
 
-      var MAX_WIDTH = 980;
+      var MAX_WIDTH = 3000;
 
       function ScaleSlider() {
           var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -118,4 +145,15 @@ $(document).ready(function() {
       $('.salon-info-detail .item-color button').removeClass('color-active');
       $(this).addClass('color-active');
    });
+
+   $('.salon-guide-bottom h3 a, .salon-check-guarantee-bottom h3 a').on('click', function(){
+        if($(this).find('i').hasClass('fa-plus')){
+           $(this).find('i').removeClass('fa-plus');
+           $(this).find('i').addClass('fa-times');
+        }else{
+            $(this).find('i').removeClass('fa-times' );
+           $(this).find('i').addClass('fa-plus');
+        }
+   });
+
 });
