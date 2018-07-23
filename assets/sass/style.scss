@@ -86,7 +86,7 @@ header{
 
 	.salon-info-detail{
 		.info-item{
-			padding-left: 50px;
+			padding-left: 10px;
 
             > h3{
                 font-weight: 600;
@@ -106,7 +106,7 @@ header{
     			margin-top: 20px;
 
 				button{
-					padding: 15px;
+					padding: 12px;
 					margin-right: 1px;
 					margin-top: 10px;
                     border-radius: 10px;
@@ -125,13 +125,13 @@ header{
                     float: left;
                     span{
                         color: #b2008d;
-                        font-size: 30px;
+                        font-size: 22px;
                         margin-right: 10px;
                     }
                 }
                 .price-old{
                     float: left;
-                    margin-top: 13px;
+                    margin-top: 9px;
                     span{
                         color: #999;
                         text-decoration: line-through;
@@ -232,6 +232,26 @@ header{
                 text-align: center;
             }
         }
+        .des-product-gallery{
+            .gallery-title{
+                h4{
+                    color: #000;
+                    font-weight: 600;
+                    margin-top: 15px;                
+                    margin-bottom: 15px;
+                }
+                a:hover{
+                    text-decoration: none;
+                    cursor: pointer;
+                    h4{
+                        color: #a94442;
+                    }
+                }
+            }
+        }
+        .row{
+            margin-top: 25px;
+        }
     }
     .salon-statistic{
         margin-top: 15px;
@@ -272,6 +292,7 @@ header{
             margin: auto;
             margin-top: 20px;
             margin-bottom: 40px;
+            text-align: center;
         }
     }
     .salon-guide-bottom{
@@ -397,11 +418,18 @@ header{
 /*==========  Non-Mobile First Method  ==========*/
  
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    header .salon-header .form-search input {
-        width: 100px;
-    }
+@media only screen and (max-width : 1440px) {
  
+}
+@media only screen and (max-width : 1366px) {
+
+}
+
+@media only screen and (max-width : 1280px) {
+ 
+}
+@media only screen and (max-width : 1200px) {
+
 }
  
 /* Medium Devices, Desktops */
@@ -530,6 +558,15 @@ and (max-device-width : 767px) {
     }
     .slide-img-bottom{
         height:230px;
+    }
+    .salon-des .des-product-1,
+    .salon-des .des-product-2{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        h4{
+            text-align: center;
+        }
     }
 }
  

@@ -60,7 +60,7 @@ header {
 .salon-main .breadcrumb {
   background-color: #fff; }
 .salon-main .salon-info-detail .info-item {
-  padding-left: 50px; }
+  padding-left: 10px; }
   .salon-main .salon-info-detail .info-item > h3 {
     font-weight: 600;
     margin-top: 0; }
@@ -73,7 +73,7 @@ header {
     padding: 5px 20px 20px 20px;
     margin-top: 20px; }
     .salon-main .salon-info-detail .info-item .item-color button {
-      padding: 15px;
+      padding: 12px;
       margin-right: 1px;
       margin-top: 10px;
       border-radius: 10px; }
@@ -88,11 +88,11 @@ header {
       float: left; }
       .salon-main .salon-info-detail .info-item .product-price .price-sell span {
         color: #b2008d;
-        font-size: 30px;
+        font-size: 22px;
         margin-right: 10px; }
     .salon-main .salon-info-detail .info-item .product-price .price-old {
       float: left;
-      margin-top: 13px; }
+      margin-top: 9px; }
       .salon-main .salon-info-detail .info-item .product-price .price-old span {
         color: #999;
         text-decoration: line-through; }
@@ -156,6 +156,18 @@ header {
     width: 60%;
     margin: 20px auto;
     text-align: center; }
+  .salon-main .salon-des .des-product-gallery .gallery-title h4 {
+    color: #000;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .salon-main .salon-des .des-product-gallery .gallery-title a:hover {
+    text-decoration: none;
+    cursor: pointer; }
+    .salon-main .salon-des .des-product-gallery .gallery-title a:hover h4 {
+      color: #a94442; }
+  .salon-main .salon-des .row {
+    margin-top: 25px; }
 .salon-main .salon-statistic {
   margin-top: 15px;
   border-bottom: 1px solid #ddd;
@@ -186,7 +198,8 @@ header {
     width: 55%;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-align: center; }
 .salon-main .salon-guide-bottom {
   margin-top: 30px;
   padding-bottom: 30px;
@@ -256,9 +269,6 @@ header {
 /* Large Devices, Wide Screens */
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  header .salon-header .form-search input {
-    width: 100px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .salon-customer-bottom .row > div {
@@ -370,7 +380,16 @@ header {
     width: 100%; }
 
   .slide-img-bottom {
-    height: 230px; } }
+    height: 230px; }
+
+  .salon-des .des-product-1,
+  .salon-des .des-product-2 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    .salon-des .des-product-1 h4,
+    .salon-des .des-product-2 h4 {
+      text-align: center; } }
 /* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */

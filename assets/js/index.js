@@ -46,7 +46,7 @@ var jssor_1_slider_init = function() {
    var jssor_1_slider = new $JssorSlider$("slider_container", jssor_1_options);
 
    /*#region responsive code begin*/
-   var MAX_WIDTH = 682;
+   var MAX_WIDTH = 850;
    function ScaleSlider() {
       var containerElement = jssor_1_slider.$Elmt.parentNode;
       var containerWidth = containerElement.clientWidth;
@@ -90,22 +90,6 @@ jssor_2_slider_init = function() {
           $Class: $JssorBulletNavigator$
         }
       };
-
-      if (navigator.userAgent.match(/iPhone|iPod|iPad|Android|Windows Phone|BlackBerry/i)) {
-        jssor_1_options = {
-              $AutoPlay: 1,
-              $Idle: 2000,
-              $SlideEasing: $Jease$.$InOutSine,
-              $DragOrientation: 3,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-    }
 
       var jssor_1_slider = new $JssorSlider$("slider_container_bottom", jssor_1_options);
 
